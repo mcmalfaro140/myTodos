@@ -4,6 +4,7 @@ function Header() {
     return(
         <header style={headerStyle}>
             <h1>Todo List</h1>
+            <h6>By Misael Corvera</h6>
         </header>
     )
 }

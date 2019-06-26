@@ -14,8 +14,13 @@ export class AddTodo extends Component {
     render() {
         return (
             <form onSubmit={this.onSubmit} style={{display: 'flex'}}>
-                <input type="text" name="title" placeholder="add Todo" style={{flex: '10', padding: '5px'}} value={this.state.title} onChange={this.onChange}></input>
-                <input type="submit" value="Submit" className="btn" style={{flex:'1'}} />
+                <div class="input-group mb-3">
+                    <input type="text" name="title" class="form-control" placeholder="Add a new task" aria-label="Recipient's username" aria-describedby="button-addon2" value={this.state.title} onChange={this.onChange}></input>
+                    <div class="input-group-append">
+                        <button class="btn btn-primary" type="submit" id="button-addon2">Add Todo</button>
+                    </div>
+                </div>
+                
             </form>
         )
     }
